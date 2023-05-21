@@ -3,7 +3,7 @@ import "./style.css"
 const Tasks = ({tasks, hideDoneTasks}) => (
 	<ul className="section__item section__list">
 		{tasks.map(task => (
-			<li
+			<li key={task.id}
 				className={`list__item ${
 					hideDoneTasks && task.done 
                     ? "list__item--hide" 

@@ -1,10 +1,8 @@
 import "./style.css";
 
-const Header = ({header}) => (
+const Header = ({ header }) => (
 	<header>
-		<h1>
-			{header}
-		</h1>
+		<h1>{header}</h1>
 	</header>
 );
 

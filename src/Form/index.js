@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.css";
 
 const Form = () => (
 	<form className="section__item form">
@@ -8,9 +8,7 @@ const Form = () => (
 			autofocus
 			placeholder="Co jest do zrobienia?"
 		/>
-		<button className="form__button">
-			Dodaj zadanie
-		</button>
+		<button className="form__button">Dodaj zadanie</button>
 	</form>
 );
 

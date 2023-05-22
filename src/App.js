@@ -6,8 +6,8 @@ import Header from "./Header";
 import Container from "./Container";
 
 let tasks = [
-	{ content: "zjeść krupnik", done: true, id:0 },
-	{ content: "odrobić lekcję", done: false, id:1 },
+	{ content: "zjeść krupnik", done: true, id: 0 },
+	{ content: "odrobić lekcję", done: false, id: 1 },
 ];
 
 let hideDoneTasks = false;
@@ -15,23 +15,16 @@ let hideDoneTasks = false;
 function App() {
 	return (
 		<Container>
-			<Header 
-      header={"Lista zadań"} 
-      />
+			<Header header={"Lista zadań"} />
 
-			<Section 
-      title="Dodaj nowe zadanie" 
-      body={<Form />} 
-      />
+			<Section title="Dodaj nowe zadanie" body={<Form />} />
 
 			<Section
 				title="Lista zadań"
 				extraHeaderContent={
 					<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
-        }
-
-				body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
-        }
+				}
+				body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
 			/>
 		</Container>
 	);

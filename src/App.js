@@ -34,10 +34,6 @@ function App() {
 		setTasks(tasks => tasks.map(task => ({ ...task, done: true })));
 
 	const addNewTask = content => {
-		if (!content) {
-			return;
-		}
-
 		setTasks(tasks => [
 			...tasks,
 			{

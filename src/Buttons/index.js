@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, finishAll}) =>
+const Buttons = ({ tasks, hideDone, toggleHideDone, finishAll }) =>
 	tasks.length > 0 && (
 		<div className="buttons">
 			<button

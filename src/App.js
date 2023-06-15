@@ -9,10 +9,15 @@ import Container from "./Container";
 function App() {
 	const [hideDone, setHideDone] = useState(false);
 
-	const [tasks, setTasks] = useState([
-		{ content: "zjeść krupnik", done: true, id: 1 },
-		{ content: "odrobić lekcję", done: false, id: 2 },
-	]);
+
+
+	const [tasks, setTasks] = useState(() =>
+		!!JSON.parse(localStorage.getItem("tasks"))
+			? JSON.parse(localStorage.getItem("tasks"))
+			: []
+	);
+
+	localStorage.setItem("tasks", JSON.stringify(tasks));
 
 	const toggleHideDone = () => {
 		setHideDone(hideDone => !hideDone);
@@ -24,9 +29,7 @@ function App() {
 	const toggleDoneTasks = id =>
 		setTasks(tasks =>
 			tasks.map(task => {
-				return task.id === id 
-				? { ...task, done: !task.done }
-				: task;
+				return task.id === id ? { ...task, done: !task.done } : task;
 			})
 		);
 

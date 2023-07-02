@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styled.js";
 
 const Header = ({ header }) => (
 	<header>

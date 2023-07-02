@@ -1,32 +1,31 @@
 import { useState } from "react";
-import "./style.css";
+import { StyledForm, Input, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
-	const [newTaksContent, setNewTaskContent] = useState("");
+  const [newTaksContent, setNewTaskContent] = useState("");
 
-	const onFormSubmit = event => {
-		event.preventDefault();
-		let contentTrimmed = newTaksContent.trim();
-		if (!contentTrimmed) {
-			return setNewTaskContent("");
-		}
-		addNewTask(contentTrimmed);
-		setNewTaskContent("");
-	};
+  const onFormSubmit = event => {
+    event.preventDefault();
+    let contentTrimmed = newTaksContent.trim();
+    if (!contentTrimmed) {
+      return setNewTaskContent("");
+    }
+    addNewTask(contentTrimmed);
+    setNewTaskContent("");
+  };
 
-	return (
-		<form className="section__item form" onSubmit={onFormSubmit}>
-			<input
-				value={newTaksContent}
-				onChange={({ target }) => setNewTaskContent(target.value)}
-				className="form__input"
-				type="text"
-				autofocus
-				placeholder="Co jest do zrobienia?"
-			/>
-			<button className="form__button">Dodaj zadanie</button>
-		</form>
-	);
+  return (
+    <StyledForm onSubmit={onFormSubmit}>
+      <Input
+        value={newTaksContent}
+        onChange={({ target }) => setNewTaskContent(target.value)}
+        type="text"
+        autofocus
+        placeholder="Co jest do zrobienia?"
+      />
+      <Button>Dodaj zadanie</Button>
+    </StyledForm>
+  );
 };
 
 export default Form;

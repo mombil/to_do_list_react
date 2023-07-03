@@ -4,7 +4,7 @@ export const Div = styled.div`
   display: grid;
   grid-template-columns: auto auto;
 
-  @media (max-width: ${({ theme }) => theme.breakpoits.mediumDevices}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mediumDevices}) {
     grid-template-columns: auto;
     justify-content: center;
   }
@@ -28,6 +28,6 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    color: ${({ theme }) => theme.colors.disabledColor};
+    color: grey;
   }
 `;

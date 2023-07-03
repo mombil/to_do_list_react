@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
 }
@@ -9,15 +12,17 @@ html {
 }
 
 .body {
-  max-width: 1000px;
+  max-width: ${({theme}) => theme.breakpoints.largeDevices};
   background-color: #eee;
   margin: auto;
   word-break: break-word;
   font-family: "Lato", sans-serif;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: ${({theme}) => theme.breakpoints.largeDevices}) {
   .body {
     max-width: calc(100% - 30px);
   }
 }
+
+`

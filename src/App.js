@@ -7,6 +7,7 @@ import Container from "./Container";
 import { theme } from "./theme";
 import { useTasks } from "./useTasks";
 import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./styled";
 
 function App() {
   const {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Container>
         <Header header={"Lista zadań"} />
 

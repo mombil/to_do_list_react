@@ -6,5 +6,6 @@ export const theme = {
   },
   breakpoints: {
     mediumDevices: "768px",
+    largeDevices: "992px",
   },
 };

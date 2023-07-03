@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - ES6+ feature
 - BEM
 - React
-
+- Styled components
 
 # Getting Started with Create React App
 

@@ -4,19 +4,19 @@ export const Div = styled.div`
   display: grid;
   grid-template-columns: auto auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoits.mediumDevices}) {
     grid-template-columns: auto;
     justify-content: center;
   }
 `;
 
 export const Button = styled.button`
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 15px;
   margin: 0;
   border: none;
   cursor: pointer;
-  color: teal;
+  color: ${({ theme }) => theme.colors.primaryColor};
   font-size: 18px;
   transition: 0.4s;
 
@@ -28,6 +28,6 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    color: grey;
+    color: ${({ theme }) => theme.colors.disabledColor};
   }
 `;

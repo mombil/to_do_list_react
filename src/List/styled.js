@@ -1,7 +1,7 @@
 import { styled, css } from "styled-components";
 
 export const List = styled.ul`
-  background-color: white;
+  background-color: ${({theme}) => theme.colors.secondaryColor};
   padding: 15px;
   margin: 0;
   list-style: none;
@@ -26,7 +26,7 @@ export const Item = styled.li`
 export const Button = styled.button`
   border: none;
   cursor: pointer;
-  color: white;
+  color: ${({theme}) => theme.colors.secondaryColor};
   margin-right: 5px;
   width: 30px;
   height: 30px;

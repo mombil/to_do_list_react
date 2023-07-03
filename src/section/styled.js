@@ -8,7 +8,7 @@ export const StyledSection = styled.section`
 `
 
 export const Header = styled.header`
-    background-color: white;
+    background-color: ${({theme}) => theme.colors.secondaryColor};
 	padding: 15px;
 	margin: 0;
 

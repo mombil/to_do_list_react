@@ -1,7 +1,9 @@
-import { Main } from "./styled";
+import { styled } from "styled-components";
 
-const Container = ({ children }) => (
-  <Main className="container">{children}</Main>
-);
+export const Container = styled.main`
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 15px;
+`;
 
-export default Container;
+export default Container

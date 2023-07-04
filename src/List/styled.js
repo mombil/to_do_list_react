@@ -1,7 +1,7 @@
 import { styled, css } from "styled-components";
 
 export const List = styled.ul`
-  background-color: ${({theme}) => theme.colors.secondaryColor};
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 15px;
   margin: 0;
   list-style: none;
@@ -26,40 +26,36 @@ export const Item = styled.li`
 export const Button = styled.button`
   border: none;
   cursor: pointer;
-  color: ${({theme}) => theme.colors.secondaryColor};
+  color: ${({ theme }) => theme.colors.secondaryColor};
   margin-right: 5px;
   width: 30px;
   height: 30px;
   padding: 1px;
   transition: 0.4s;
+`;
 
-  ${({ $toggleDone }) =>
-    $toggleDone &&
-    css`
-      background-color: hsl(120, 100%, 25%);
+export const ToggleDoneButton = styled(Button)`
+  background-color: hsl(120, 100%, 25%);
 
-      &:hover {
-        background-color: hsl(120, 100%, 35%);
-      }
+  &:hover {
+    background-color: hsl(120, 100%, 35%);
+  }
 
-      &:active {
-        background-color: hsl(120, 100%, 40%);
-      }
-    `}
+  &:active {
+    background-color: hsl(120, 100%, 40%);
+  }
+`;
 
-  ${({ remove }) =>
-    remove &&
-    css`
-      background-color: hsl(0, 100%, 50%);
+export const RemoveButton = styled(Button)`
+  background-color: hsl(0, 100%, 50%);
 
-      &:hover {
-        background-color: hsl(0, 100%, 60%);
-      }
+  &:hover {
+    background-color: hsl(0, 100%, 60%);
+  }
 
-      &:active {
-        background-color: hsl(0, 100%, 65%);
-      }
-    `}
+  &:active {
+    background-color: hsl(0, 100%, 65%);
+  }
 `;
 
 export const Content = styled.span`

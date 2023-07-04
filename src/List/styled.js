@@ -32,30 +32,22 @@ export const Button = styled.button`
   height: 30px;
   padding: 1px;
   transition: 0.4s;
+  
+  &:hover {
+    filter: brightness(110%);
+  }
+
+  &:active {
+    filter: brightness(120%);
+  }
 `;
 
 export const ToggleDoneButton = styled(Button)`
   background-color: ${({ theme }) => theme.colors.green};
-
-  &:hover {
-    filter: brightness(110%);
-  }
-
-  &:active {
-    filter: brightness(120%);
-  }
 `;
 
 export const RemoveButton = styled(Button)`
   background-color: ${({ theme }) => theme.colors.red};
-
-  &:hover {
-    filter: brightness(110%);
-  }
-
-  &:active {
-    filter: brightness(120%);
-  }
 `;
 
 export const Content = styled.span`

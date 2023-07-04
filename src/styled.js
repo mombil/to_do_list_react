@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+body {
   max-width: ${({ theme }) => theme.breakpoints.largeDevices};
   background-color: #eee;
   margin: auto;
@@ -20,7 +20,7 @@ html {
 }
 
 @media (max-width: ${({ theme }) => theme.breakpoints.largeDevices}) {
-  .body {
+  body {
     max-width: calc(100% - 30px);
   }
 }

@@ -21,13 +21,13 @@ export const Button = styled.button`
   transition: 0.4s;
 
   &:hover {
-    color: hsl(180, 100%, 30%);
+    filter: brightness(110%);
   }
   &:active {
-    color: hsl(180, 100%, 40%);
+    filter: brightness(120%);
   }
 
   &:disabled {
-    color: grey;
+    color: ${({ theme }) => theme.colors.disabledColor};
   }
 `;

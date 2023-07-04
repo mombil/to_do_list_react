@@ -35,26 +35,26 @@ export const Button = styled.button`
 `;
 
 export const ToggleDoneButton = styled(Button)`
-  background-color: hsl(120, 100%, 25%);
+  background-color: ${({ theme }) => theme.colors.green};
 
   &:hover {
-    background-color: hsl(120, 100%, 35%);
+    filter: brightness(110%);
   }
 
   &:active {
-    background-color: hsl(120, 100%, 40%);
+    filter: brightness(120%);
   }
 `;
 
 export const RemoveButton = styled(Button)`
-  background-color: hsl(0, 100%, 50%);
+  background-color: ${({ theme }) => theme.colors.red};
 
   &:hover {
-    background-color: hsl(0, 100%, 60%);
+    filter: brightness(110%);
   }
 
   &:active {
-    background-color: hsl(0, 100%, 65%);
+    filter: brightness(120%);
   }
 `;
 

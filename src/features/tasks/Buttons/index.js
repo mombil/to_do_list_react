@@ -4,7 +4,6 @@ import { StyledButtons, Button } from "./styled";
 
 const Buttons = ({ finishAll }) => {
   const { tasks, hideDone } = useSelector(selectTasks);
-console.log(hideDone)
   const dispatch = useDispatch();
 
   return (

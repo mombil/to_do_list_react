@@ -32,7 +32,7 @@ export const Button = styled.button`
   height: 30px;
   padding: 1px;
   transition: 0.4s;
-  
+
   &:hover {
     filter: brightness(110%);
   }

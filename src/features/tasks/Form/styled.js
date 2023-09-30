@@ -38,7 +38,7 @@ export const Button = styled.button`
   }
 
   &:active {
-    filter: brightness(120%)
+    filter: brightness(120%);
   }
 
   @media (max-width: 767px) {

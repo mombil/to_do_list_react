@@ -21,6 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React
 - Styled components
 - Redux
+- axios
 
 # Getting Started with Create React App
 

@@ -9,10 +9,10 @@ const Navigation = () => (
   <StyledNavigation>
     <UnorderedList>
       <ListItem>
-        <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+        <StyledNavLink activeClassName="active" to="/zadania">Zadania</StyledNavLink>
       </ListItem>
       <ListItem>
-        <StyledNavLink to="/author">O autorze</StyledNavLink>
+        <StyledNavLink activeClassName="active" to="/author">O autorze</StyledNavLink>
       </ListItem>
     </UnorderedList>
   </StyledNavigation>

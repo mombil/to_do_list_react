@@ -15,6 +15,9 @@ export const ListItem = styled.li`
 export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.colors.secondaryColor};
   text-decoration: none;
+  &.active {
+    font-weight: bold;
+  }
 `;
 
 export const UnorderedList = styled.ul`

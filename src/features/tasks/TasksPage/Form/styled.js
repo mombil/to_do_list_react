@@ -13,16 +13,6 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const Input = styled.input`
-  flex: 1 0;
-  padding: 10px;
-  margin-right: 15px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mediumDevices}) {
-    flex: 1 1 100%;
-    margin: 5px 0;
-  }
-`;
 
 export const Button = styled.button`
   color: ${({ theme }) => theme.colors.secondaryColor};

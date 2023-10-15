@@ -12,15 +12,18 @@ html {
 }
 
 body {
-  max-width: ${({ theme }) => theme.breakpoints.largeDevices};
   background-color: #eee;
-  margin: auto;
   word-break: break-word;
   font-family: "Lato", sans-serif;
 }
 
+main {
+  max-width: ${({ theme }) => theme.breakpoints.largeDevices};
+  margin: auto;
+}
+
 @media (max-width: ${({ theme }) => theme.breakpoints.largeDevices}) {
-  body {
+  main {
     max-width: calc(100% - 30px);
   }
 }

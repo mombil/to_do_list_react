@@ -5,7 +5,7 @@ import {
   toggleHideDone,
   finishAll,
   selectAreTasksEmpty,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { StyledButtons } from "./styled";
 import { Button } from "../styled";
 

@@ -22,3 +22,9 @@ export const Header = styled.header`
 		grid-template-rows: auto;
 }
 `
+
+export const Content = styled.div`
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
+  padding: 15px;
+  margin: 0;
+`;

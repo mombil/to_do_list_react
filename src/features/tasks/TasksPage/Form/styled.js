@@ -13,7 +13,6 @@ export const StyledForm = styled.form`
   }
 `;
 
-
 export const Button = styled.button`
   color: ${({ theme }) => theme.colors.secondaryColor};
   background-color: ${({ theme }) => theme.colors.primaryColor};

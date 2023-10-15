@@ -9,10 +9,7 @@ function AuthorPage() {
       <Section
         title="Paweł Brejnak"
         body={
-        
-              "Nazywam się Paweł mam 16 lat i uczęszczam do czwartej klasy techinkum o profilu technik informatyk W wolnym czasie lubie grać w gry komputerowe lub grać na pianinie."
-            
-          
+          "Nazywam się Paweł mam 16 lat i uczęszczam do czwartej klasy techinkum o profilu technik informatyk W wolnym czasie lubie grać w gry komputerowe lub grać na pianinie."
         }
       />
     </Container>

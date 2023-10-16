@@ -18,6 +18,9 @@ export const StyledNavLink = styled(NavLink)`
   &.active {
     font-weight: bold;
   }
+  &:hover {
+    filter: brightness(90%);
+  }
 `;
 
 export const UnorderedList = styled.ul`
